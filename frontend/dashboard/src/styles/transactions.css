@@ -1,0 +1,60 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table th {
+  background: #f1f5f9;
+  text-align: left;
+  font-size: 14px;
+  color: #475569;
+}
+
+.table tr:hover {
+  background: #f8fafc;
+}
+
+.transactions-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.transactions-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.transactions-actions {
+  margin-top: 16px;
+}
+
+.status-success {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.status-failed {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+.status-processing {
+  color: #d97706;
+  font-weight: bold;
+}
+
+body {
+  background: transparent;
+}
+

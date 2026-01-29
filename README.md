@@ -5,9 +5,9 @@ Built to demonstrate **scalable fintech system design** with reliability and fau
 
 ---
 
-## 🌟 Features Overview
+##  Features Overview
 
-### 🔄 Asynchronous Payment Processing
+###  Asynchronous Payment Processing
 - Background execution using **Bull + Redis**
 - Separate queues for:
   - Payment execution
@@ -23,7 +23,7 @@ pending → success / failed
 
 ---
 
-### 📡 Webhook Delivery System
+###  Webhook Delivery System
 - **HMAC-SHA256 signature** sent via `X-Webhook-Signature`
 - Automatic retry using **exponential backoff**
 - Production: 1min → 5min → 30min → 2hr
@@ -37,7 +37,7 @@ pending → success / failed
 
 ---
 
-### 🧩 Embeddable Checkout SDK
+###  Embeddable Checkout SDK
 - Modal / iframe-based checkout
 - No external redirection
 - Secure cross-window communication using `postMessage`
@@ -49,7 +49,7 @@ pending → success / failed
 
 ---
 
-### 💸 Refund Handling
+###  Refund Handling
 - Supports **full and partial refunds**
 - Refunds processed asynchronously
 - Webhook notification on completion
@@ -63,7 +63,7 @@ pending → processed
 
 ---
 
-### 🔁 Idempotency Support
+###  Idempotency Support
 - Requests protected using `Idempotency-Key`
 - Duplicate requests return cached responses
 - Keys expire after **24 hours**
@@ -72,7 +72,7 @@ pending → processed
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ```
 
@@ -115,7 +115,7 @@ Payment Gateway System
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Docker Desktop
@@ -161,7 +161,7 @@ curl http://localhost:8000/health
 
 ---
 
-## 🔑 Test Merchant Details
+##  Test Merchant Details
 
 Auto-seeded during startup:
 
@@ -241,7 +241,7 @@ Payments are returned immediately and finalized asynchronously.
 
 ---
 
-## 🖥 Frontend Applications
+##  Frontend Applications
 
 ### Dashboard (Port 3000)
 
@@ -261,7 +261,7 @@ Payments are returned immediately and finalized asynchronously.
 
 ---
 
-## 🗄 Database Design
+##  Database Design
 
 Tables used:
 
@@ -276,7 +276,7 @@ Tables used:
 
 ---
 
-## 🧪 Test Mode
+##  Test Mode
 
 ```bash
 TEST_MODE=true
@@ -288,7 +288,7 @@ Provides deterministic behavior for evaluation.
 
 ---
 
-## 🔁 Async Processing Flow
+##  Async Processing Flow
 
 ```
 Client submits payment
@@ -302,7 +302,7 @@ Client submits payment
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 async-payment-gateway/
@@ -316,7 +316,7 @@ async-payment-gateway/
 
 ---
 
-## 🚢 Deployment Notes
+##  Deployment Notes
 
 * Secure secret management
 * TLS for all services
@@ -326,7 +326,7 @@ async-payment-gateway/
 
 ---
 
-## ✅ Deliverable 2 Coverage
+##  Deliverable 2 Coverage
 
 * Async job queues
 * Redis-backed workers
@@ -340,8 +340,6 @@ async-payment-gateway/
 
 ---
 
-## 📝 Summary
+##  Summary
 
 This project demonstrates a **real-world payment gateway architecture**, emphasizing asynchronous workflows, system reliability, and production readiness for fintech platforms.
-
-```
